@@ -14,6 +14,7 @@ It doesn't have to be pretty, it doesn't have to be complex, it should just be b
 - [ ] kick the user out after changes made, so that they have to reauthenticate; admins who remove themselves shouldn't be able to edit
 - [ ] Create index page of all providers, logos, and whether the user is permitted to access them (like camvote at the moment)
 - [ ] determine whether other fields (in particular logos?) to be updated?
+- [ ] Add Raven authentication
 
 ## License
 This project is licensed under GPLv3.
