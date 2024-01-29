@@ -1,0 +1,18 @@
+<!doctype html>
+<title>Camvote self-service</title>
+
+<h1 id="title">Camvote self-service</h1>
+
+<h2 id="provider_name">Logged in for: {{ provider_name }}</h2>
+
+<p class="warning"><b>IMPORTANT:</b> Once you click 'submit,' the changes are made immediately. If you are removing yourself as an admin, you will no longer be able to use this page.</p>
+
+<form action="/form/update_admins/" method="POST">
+  <label for="admin_list">Current election admins:</label>
+  <br/>
+  <textarea rows="5" cols="60" name="admin_list">{{ current_admins }}</textarea>
+  <br/>
+  <input type="submit" value="submit"/>
+</form>
+
+<p class="info">If you have any questions or need help, email <a href="mailto:sysadmins@camvote.org">sysadmins@camvote.org</a></p>

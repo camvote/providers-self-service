@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "providers-self-service"
+version = "0.1.0"
+description = "Serlf-service tool for camvote providers"
+authors = ["Lewis <15088984+lewis-wf@users.noreply.github.com>"]
+license = "GPL3"
+readme = "README.md"
+packages = [{include = "providers_self_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Flask = "^3.0.1"
+pytest = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
