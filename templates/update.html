@@ -4,10 +4,15 @@
 <h1 id="title">Camvote self-service</h1>
 
 <h2 id="provider_name">Logged in for: {{ provider_name }}</h2>
+<img src="{{ provider_image }}" alt="Provider logo" id="provider_logo" height="150px"/>
 
 <p class="warning"><b>IMPORTANT:</b> Once you click 'submit,' the changes are made immediately. If you are removing yourself as an admin, you will no longer be able to use this page.</p>
 
-<form action="/form/update_admins/" method="POST">
+{% for message in get_flashed_messages() %}
+<div class="alert">{{ message }}</div>
+{% endfor %}
+
+<form action="/update" method="POST">
   <label for="admin_list">Current election admins:</label>
   <br/>
   <textarea rows="5" cols="60" name="admin_list">{{ current_admins }}</textarea>

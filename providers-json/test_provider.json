@@ -1,0 +1,20 @@
+{
+    "id": "testunion",
+    "name": "Saint Test College JCR",
+    "baseUrl": "/testunion/",
+    "imageSubfolder": "/images/",
+    "managerClaimFormLocation": false,
+    "typeSingular": "organisation",
+    "typeSingularUcfirst": "part of testunion",
+    "administrators": [
+        "lw664",
+        "tes10"
+    ],
+    "organisations": {
+        "testunion": {
+            "organisationName": "Saint Test College JCR",
+            "profileBaseUrl": "",
+            "logoLocation": "static/images/saint_test.webp"
+        }
+    }
+}
