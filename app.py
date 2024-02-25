@@ -43,12 +43,13 @@ def index():
 @app.route('/update', methods=('GET', 'POST'))
 def update():
     provider_data = load_provider_data('test_provider')
+    
     if request.method == "POST":
         admin_list = request.form["admin_list"]
         admin_list_sanitised = santisie_crsid_list(admin_list)
         
         if verify_crsids(admin_list_sanitised) == False:
-            flash("Invalid CRSIDs")
+            flash("Invalid CRSIDs. You must not include any special characters or the email domain. Example: abc123 not abc123@cam.ac.uk")
 
         elif len(admin_list_sanitised) == 0:
             flash("Admin list cannot be empty")
