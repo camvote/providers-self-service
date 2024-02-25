@@ -1,1 +1,19 @@
-{"asnac": {"id": "asnac", "name": "Anglo-Saxon, Norse and Celtic Society", "baseurl": "/asnac/", "imageSubfolder": "/images/", "managerClaimFormLocation": false, "typeSingular": "organisation", "typeSingularUcfirst": "part of the University", "administrators": ["wmbm2"], "organisations": {"asnac": {"organisationName": "Anglo-Saxon, Norse and Celtic Society", "profileBaseUrl": "", "logoLocation": "https://i.imgur.com/g15bAdP.png"}}}}
+{
+        "id": "asnac",
+        "name": "Anglo-Saxon, Norse and Celtic Society",
+        "baseurl": "/asnac/",
+        "imageSubfolder": "/images/",
+        "managerClaimFormLocation": false,
+        "typeSingular": "organisation",
+        "typeSingularUcfirst": "part of the University",
+        "administrators": [
+            "wmbm2"
+        ],
+        "organisations": {
+            "asnac": {
+                "organisationName": "Anglo-Saxon, Norse and Celtic Society",
+                "profileBaseUrl": "",
+                "logoLocation": "https://i.imgur.com/g15bAdP.png"
+            }
+        }
+}

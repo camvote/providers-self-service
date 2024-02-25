@@ -1,1 +1,28 @@
-{"qjcr": {"id": "qjcr", "name": "Queens' College JCR", "baseUrl": "/qjcr/", "imageSubfolder": "/images/", "managerClaimFormLocation": false, "typeSingular": "organisation", "typeSingularUcfirst": "part of the University", "administrators": ["bpc38", "mb2345", "gde25", "eb877", "pr505"], "organisations": {"qjcr": {"organisationName": "QJCR", "profileBaseUrl": "", "logoLocation": "https://qjcr.org.uk/content/squarelogo.png"}, "qjcr-test": {"organisationName": "QJCR Test", "profileBaseUrl": "", "logoLocation": "https://qjcr.org.uk/content/squarelogo.png"}}}}
+{
+        "id": "qjcr",
+        "name": "Queens' College JCR",
+        "baseUrl": "/qjcr/",
+        "imageSubfolder": "/images/",
+        "managerClaimFormLocation": false,
+        "typeSingular": "organisation",
+        "typeSingularUcfirst": "part of the University",
+        "administrators": [
+            "bpc38",
+            "mb2345",
+            "gde25",
+            "eb877",
+            "pr505"
+        ],
+        "organisations": {
+            "qjcr": {
+                "organisationName": "QJCR",
+                "profileBaseUrl": "",
+                "logoLocation": "https://qjcr.org.uk/content/squarelogo.png"
+            },
+            "qjcr-test": {
+                "organisationName": "QJCR Test",
+                "profileBaseUrl": "",
+                "logoLocation": "https://qjcr.org.uk/content/squarelogo.png"
+            }
+        }
+}

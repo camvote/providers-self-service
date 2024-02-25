@@ -1,1 +1,21 @@
-{"cumsa": {"id": "cumsa", "name": "Cambridge University Malaysia and Singapore Association", "baseurl": "/cumsa/", "imageSubfolder": "/images/", "managerClaimFormLocation": false, "typeSingular": "organisation", "typeSingularUcfirst": "part of the University", "administrators": ["mb2345", "bpc38", "jds87"], "organisations": {"cumsa": {"organisationName": "Cambridge University Malaysia and Singapore Association", "profileBaseUrl": "", "logoLocation": "https://cdn.discordapp.com/attachments/903397629759742012/932302777332420718/CUMSA_logo.jpeg"}}}}
+{
+        "id": "cumsa",
+        "name": "Cambridge University Malaysia and Singapore Association",
+        "baseurl": "/cumsa/",
+        "imageSubfolder": "/images/",
+        "managerClaimFormLocation": false,
+        "typeSingular": "organisation",
+        "typeSingularUcfirst": "part of the University",
+        "administrators": [
+            "mb2345",
+            "bpc38",
+            "jds87"
+        ],
+        "organisations": {
+            "cumsa": {
+                "organisationName": "Cambridge University Malaysia and Singapore Association",
+                "profileBaseUrl": "",
+                "logoLocation": "https://cdn.discordapp.com/attachments/903397629759742012/932302777332420718/CUMSA_logo.jpeg"
+            }
+        }
+}
