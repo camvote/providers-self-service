@@ -3,5 +3,14 @@
 <title>Camvote self-service</title>
 
 <h1 id="title">Camvote self-service</h1>
-<p class="placeholder">This is a placeholder for the self-service page.</p>
+<p id="username">Logged in as: <b>{{ username }}</b></p>
+
+<h2>Providers List</h2>
+<ul>
+  {% for provider in providers %}
+  <li>
+    <a href="/update/{{ provider['id'] }}">{{ provider['name'] }}</a>
+  </li>
+  {% endfor %}
+
 <p class="placeholder"><a href="/update">Click here to update admins.</a></p>

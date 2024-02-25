@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, url_for, flash, redirect
 import json
 import re
+import os
 
 app = Flask(__name__)
 # DO NOT COMMIT
@@ -36,13 +37,21 @@ def santisie_crsid_list(string):
     new_string = re.sub(r'[^a-zA-Z0-9\n]', '', string)
     return new_string.split("\n")
 
+def load_providers():
+    providers = []
+    for filename in os.listdir("providers-json"):
+        with open(f"providers-json/{filename}") as f:
+            providers.append(json.load(f))
+    return providers
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    username = "lw664"
+    return render_template('index.html', username=username, providers=load_providers())
 
-@app.route('/update', methods=('GET', 'POST'))
-def update():
-    provider_data = load_provider_data('test_provider')
+@app.route('/update/<provider_id>', methods=('GET', 'POST'))
+def update(provider_id):
+    provider_data = load_provider_data(provider_id)
     
     if request.method == "POST":
         admin_list = request.form["admin_list"]
